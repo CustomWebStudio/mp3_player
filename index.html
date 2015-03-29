@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>HTML5 Vinyl-styled Music Player</title>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	
+	<link rel="stylesheet" href="css/vinyl.css"/>
+	<script type="text/javascript" src="js/vinyl.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+	
+		$(function(){
+			$('.demoVinyl').plate({
+				 playlist: [
+					{"file":"files/a_time_for_us.mp3"},
+					{"file":"files/believe_in_you.mp3"},
+					{"file":"files/rise_against_-_savior.mp3"}], autoplay: true
+			});
+		});
+	</script>
+		<div class="demoVinyl" style="margin: 0 auto;">
+		</div>
+</body>
+</html>
